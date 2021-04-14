@@ -1,124 +1,4 @@
-.home-section{
-  background: $gray;
-  height: 100vh;
-  position: relative;
-  width: 100%;
-  .space-nav{
-    padding: 60px 0;
-    position: relative;
-    &.open-right{
-      .links-custom{
-        opacity: 0;
-      }
-      .nav-float{
-        z-index: 100;
-        .button-nav-float{
-          background: white;
-          transform: rotate(45deg);
-          transition: all .5s ease;
-          &:after, &:before{
-            background: white;
-          }
-          &:after{
-            opacity: 0;
-          }
-          &:before{
-            transform: rotate(90deg);
-            margin-top: 0;
 
-          }
-        }
-      }
-    }
-    .logo{
-      img{
-        max-height: 50px;
-      }
-    }
-    .links-custom{
-      color: $primary;
-      display: block;
-      text-align: right;
-      li{
-        display: inline-block;
-        padding: 15px 20px;
-        a{
-          color: $primary;
-          text-decoration: none;
-          transition: all .5s ease;
-          &:hover{
-            color: $secondary;
-          }
-        }
-      }
-    }
-  }
-  .title-custom{
-    .title{
-      padding-top: 35%;
-      p{
-        &.h1-text{
-          color: $primary;
-          font-size: 6rem;
-          font-weight: bold;
-          line-height: 85px;
-        }
-        &.subtitle{
-          text-transform: uppercase;
-          color: $secondary;
-          font-size: 1.8rem;
-        }
-      }
-    }
-  }
-  .footer-section{
-    position: absolute;
-    bottom: 30px;
-    right: 30%;
-    p{
-      margin-bottom: 0px;
-      color: $primary;
-    }
-  }
-  .nav-float{
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: -100px;
-    top: 75px;
-    cursor: pointer;
-    &:hover{
-      .button-nav-float{
-        &:after{
-          width: 15px;
-          background: $secondary;
-        }
-      }
-    }
-    .button-nav-float{
-      background: $primary;
-      width: 25px;
-      height: 3px;
-      &:after{
-        content: "";
-        position: absolute;
-        width: 25px;
-        height: 3px;
-        background: $primary;
-        margin-top: 8px;
-        transition: all .5s ease;
-      }
-      &:before{
-        content: "";
-        position: absolute;
-        width: 25px;
-        height: 3px;
-        background: $primary;
-        margin-top: 16px;
-      }
-    }
-  }
-}
 .right-menu{
   position: absolute;
   width: 40%;
@@ -129,5 +9,23 @@
   right: -40%;
   &.open{
     right: 0;
+  }
+}
+
+  /* SECCION, QUIENES SOMOS */
+
+.who-section{
+  background: $gray;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+    .title{
+
+      color: $third;
+      padding-top: 25%;
+      font-size: 6rem;
+      font-weight: bold;
+      line-height: 85px;
+    
   }
 }
