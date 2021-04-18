@@ -1,0 +1,36 @@
+.service-section{
+  background: $gray;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  .img-service{
+    position: absolute;
+    padding: 111px 0px 0px 88px;
+    z-index: 2;
+    img{
+      width: 544px;
+      opacity: .2;
+    }
+  }
+  .title{
+    color: $fifth;
+    padding-top: 60%;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 85px;
+    z-index: 3;
+  }
+  .right-text-custom{
+    background: $sixth;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    right: 0;
+    padding: 145px;
+  }
+  .box-text{
+    color: white;
+    font-size: 15px;
+    z-index: 1;
+  }
+}

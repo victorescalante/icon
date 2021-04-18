@@ -1,0 +1,69 @@
+.contact-section{
+  background: $gray;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  .img-contact{
+    position: absolute;
+    z-index: 2;
+    padding: 95px 0px 0px 26px;
+    img{
+      width: 600px;
+      opacity: .2;
+    }
+  }
+  .title{
+    color: $primary;
+    padding-top: 59%;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 85px;
+    z-index: 3;
+  }
+  .right-text-custom{
+    background: $secondary;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    right: 0;
+    //padding: 145px;
+  }
+  .box-text{
+    z-index: 1;
+    padding: 110px 0px 0px 60px;
+    h1{
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .form-text{
+      padding: 25px 0px 0px 35px;
+      h2{
+        color: $primary;
+        font-weight: bold;
+        font-size: 42px;
+      }
+      h3{
+        color: white;
+        font-size: 14px;
+        padding-bottom: 30px;
+      }
+      h4{
+        color: $primary;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      input{
+        background: $secondary;
+        color: white;
+        padding-right: 270px;
+      }
+      .btn{
+        color: $primary;
+        transform: rotate(90deg);
+        font-weight: bold;
+        padding: 26px 0px 0px 0px;
+      }
+    }
+  }
+}
