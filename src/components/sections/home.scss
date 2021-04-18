@@ -1,3 +1,22 @@
+.div-menu{
+  transition: all 2s ease;
+  background: $gray;
+  &.fixed_header{
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 100;
+    .space-nav{
+      padding: 15px;
+      .logo{
+        padding: 10px 0;
+        img{
+          max-width: 100px;
+        }
+      }
+    }
+  }
+}
 .home-section{
   background: $gray;
   height: 100vh;
@@ -6,6 +25,7 @@
   .space-nav{
     padding: 60px 0;
     position: relative;
+    transition: all 1s ease;
     &.open-right{
       .links-custom{
         opacity: 0;
@@ -59,7 +79,7 @@
       p{
         &.h1-text{
           color: $primary;
-          font-size: 6rem;
+          font-size: 5rem;
           font-weight: bold;
           line-height: 85px;
         }
@@ -84,8 +104,8 @@
     width: 25px;
     height: 25px;
     position: absolute;
-    right: -100px;
-    top: 75px;
+    // right: -100px;
+    // top: 75px;
     cursor: pointer;
     &:hover{
       .button-nav-float{
@@ -107,6 +127,7 @@
         background: $primary;
         margin-top: 8px;
         transition: all .5s ease;
+        left: 0;
       }
       &:before{
         content: "";
@@ -115,6 +136,7 @@
         height: 3px;
         background: $primary;
         margin-top: 16px;
+        left: 0;
       }
     }
   }
