@@ -5,7 +5,9 @@
   width: 100%;
   .title{
     color: $seventh;
-    padding-top: 40%;
+    align-items: center;
+    display: flex;
+    height: 100vh;
     font-size: 6rem;
     font-weight: bold;
     line-height: 85px;

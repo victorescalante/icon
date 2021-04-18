@@ -14,7 +14,9 @@
   }
   .title{
     color: $third;
-    padding-top: 62%;
+    align-items: center;
+    display: flex;
+    height: 100vh;
     font-size: 5rem;
     font-weight: bold;
     line-height: 85px;
