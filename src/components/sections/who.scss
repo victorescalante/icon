@@ -1,0 +1,53 @@
+.who-section{
+  background: $gray;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  .img-who{
+    position: absolute;
+    padding: 42px 0px 0px 483px;
+    z-index: 2;
+    img{
+      width: 450px;
+      opacity: .2;
+    }
+  }
+  .title{
+    color: $third;
+    padding-top: 62%;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 85px;
+    z-index: 3;
+  }
+  .right-text-custom{
+    background: $fourth;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    //opacity: .95;
+    right: 0px;
+    padding: 15px;
+  }
+  .box-text{
+    width: 100%;
+    max-width: 670px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    padding: 25px 19%;
+    z-index: 1;
+    .first{
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: justify;
+      //padding-top: 65%;
+    }
+    .second{
+      color: white;
+      font-size: 15px;
+      text-align: justify;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.code-section{
+  background: $gray;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  .title{
+    color: $seventh;
+    padding-top: 40%;
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 85px;
+  }
+  .right-text-custom{
+    background: $eighth;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    right: 0;
+    padding: 145px;
+  }
+  .box-text{
+    color: white;
+    font-size: 15px;
+  }
+}
