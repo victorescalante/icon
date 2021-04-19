@@ -27,24 +27,20 @@
     position: absolute;
     width: 50%;
     height: 100vh;
-    //opacity: .95;
-    right: 0px;
-    padding: 15px;
+    right: 0;
   }
   .box-text{
     width: 100%;
-    max-width: 670px;
+    // max-width: 670px;
     bottom: 0px;
-    left: 0px;
+    top: 50%;
     position: absolute;
     padding: 25px 19%;
     z-index: 1;
     .first{
       color: white;
-      font-size: 20px;
-      font-weight: bold;
+      font-size: 15px;
       text-align: justify;
-      //padding-top: 65%;
     }
     .second{
       color: white;

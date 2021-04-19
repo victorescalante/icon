@@ -66,6 +66,7 @@
           color: $primary;
           text-decoration: none;
           transition: all .5s ease;
+          font-weight: bold;
           &:hover{
             color: $secondary;
           }
@@ -75,7 +76,10 @@
   }
   .title-custom{
     .title{
-     padding-top: 15%;
+     padding-top: 40%;
+      img{
+        width: 100%;
+      }
       p{
         &.icon{
           width: 20px;

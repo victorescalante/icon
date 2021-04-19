@@ -8,6 +8,33 @@
     <link rel="icon" href="assets/assets/favicon-01.png">
     <link rel="stylesheet" href="dist/bootstrap.css">
     <link rel="stylesheet" href="dist/app.css">
+    <style>
+        @font-face {
+            font-family: "iconfont";
+            src: url("src/components/tipografia/m_personal_ligth.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "iconfont-bold-n";
+            src: url("src/components/tipografia/m_bold_n.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "iconfont-bold";
+            src: url("src/components/tipografia/m_bold.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+        p, ul{
+            font-family: "iconfont", sans-serif;
+            font-weight: normal;
+        }
+        p.title{
+            font-family: "iconfont-bold", sans-serif;
+        }
+    </style>
     <title>Icono Strategy</title>
 </head>
 <body class="body">
@@ -76,8 +103,8 @@
           </div>
           <div class="right-text-custom">
             <div class="box-text">
-              <p class="first">Un equipo de profesionales de comunicacion que apoyamos a los tomadores de decisiones
-               de empresas e instituciones, a resolver sus retos de comunicacion.</p>
+              <p class="first">Un equipo de <b>profesionales en comunicación,</b> que <b>apoyamos</b> a los tomadores de decisiones
+               de empresas e instituciones, <b>a mejorar</b> integralmente su estrategia y sus contenidos de comunicación.</p>
               <p class="second">Tenemos <b>30 años de experiencia</b> en desarrollar planes estratégicos de
               comunicación y en dirigir áreas de comunicaciónde empresas. instituciones públicas y académicas.</p>
             </div>
@@ -96,8 +123,8 @@
           </div>
           <div class="right-text-custom">
             <div class="box-text">
-              <ul type="form">
-                <li>Fortalecer y cuidar la identidad corporativa.</li>
+              <ul class="list-services">
+                <li><b>Fortalecer y cuidar</b> la identidad corporativa.</li>
                 <li>Diseñar el plan estratégico de comunicación y de acompañar en su ejecución.</li>
                 <li>Reorganizar páginas de internet y redes sociales en un ecosistema digital.</li>
                 <li>Formar al staff de comunicación para favorecer una cultura periodistica interna.</li>
@@ -119,7 +146,7 @@
           </div>
           <div class="right-text-custom">
               <div class="box-text">
-                <ul type="form">
+                <ul class="list-code">
                   <li><b>Empatía: </b>Lo importante es lo que nuestro cliente necesita.</li>
                   <li><b>Pensamiento estratégico: </b>Escuchar, evaluar y proponer. Creemos que la planeación y la otganización sustituye la improvisación.</li>
                   <li><b>Austeridad: </b>Hacer más con menos. Trabajamos de la mano con nuestros clientes para reducir costos.</li>
@@ -144,12 +171,18 @@
           <div class="right-text-custom">
             <div class="box-text">
               <h1>Escríbenos e iniciemos una conversación:</h1>
-              <div class="form">
-                <input type="text" name="name" placeholder="Nombre"><br><br>
-                <input type="text" name="email" placeholder="Email"><br><br>
-                <input type="text" name="message" placeholder="Mensaje"><br><br>
+              <div class="form form-custom">
+                  <label>
+                      <input type="text" name="name" placeholder="Nombre">
+                  </label>
+                  <label>
+                      <input type="text" name="email" placeholder="Email">
+                  </label>
+                  <label>
+                      <input type="text" name="message" placeholder="Mensaje">
+                  </label>
                 <div class="btn-aligne">
-                  <input class="btn" type="submit" value="Enviar">
+                    <button class="btn">Enviar</button>
                 </div>
               </div>
               <div class="information">
@@ -157,7 +190,7 @@
                   <img src="assets/assets/whats-app.png" alt="">
                 </div>
                 <div class="letter">
-                  <h2>Envianos un WhatsApp: 55 3660 3511</h2>
+                  <h2><b>Envianos un WhatsApp: 55 3660 3511</b></h2>
                   <h3>Calle Durango No.341. Piso 1.Col.Roma, Cuauhtémoc. C.P.06700. CDMX.</h3>
                 </div>
               </div>
@@ -190,7 +223,7 @@
         $(window).scroll(function () {
             let $this = $(this),
                 $head = $('.div-menu');
-            if ($this.scrollTop() > 120) {
+            if ($this.scrollTop() > 500) {
                 $head.addClass('fixed_header');
             } else {
                 $head.removeClass('fixed_header');
