@@ -75,18 +75,17 @@
   }
   .title-custom{
     .title{
-      padding-top: 35%;
+     padding-top: 15%;
       p{
-        &.h1-text{
-          color: $primary;
-          font-size: 5rem;
-          font-weight: bold;
-          line-height: 85px;
+        &.icon{
+          width: 20px;
         }
         &.subtitle{
           text-transform: uppercase;
           color: $secondary;
-          font-size: 1.8rem;
+          font-size: 20px;
+          font-weight: bold;
+          padding-top: 90px;
         }
       }
     }
