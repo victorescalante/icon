@@ -1,0 +1,117 @@
+.nav-float{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  // right: -100px;
+  // top: 75px;
+  cursor: pointer;
+  &:hover{
+    .button-nav-float{
+      &:after{
+        width: 15px;
+        background: $secondary;
+      }
+    }
+  }
+  .button-nav-float{
+    background: $primary;
+    width: 25px;
+    height: 3px;
+    &:after{
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      background: $primary;
+      margin-top: 8px;
+      transition: all .5s ease;
+      left: 0;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      background: $primary;
+      margin-top: 16px;
+      left: 0;
+    }
+  }
+}
+
+.div-menu{
+  transition: all 2s ease;
+  position: absolute;
+  z-index: 150;
+  width: 100%;
+  background: transparent;
+
+  &.fixed_header{
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 100;
+    .space-nav{
+      padding: 15px;
+      .logo{
+        padding: 10px 0;
+        img{
+          max-width: 100px;
+        }
+      }
+    }
+  }
+  .space-nav{
+    padding: 60px 0;
+    position: relative;
+    transition: all 1s ease;
+    &.open-right{
+      .links-custom{
+        opacity: 0;
+      }
+      .nav-float{
+        z-index: 100;
+        .button-nav-float{
+          background: white;
+          transform: rotate(45deg);
+          transition: all .5s ease;
+          &:after, &:before{
+            background: white;
+          }
+          &:after{
+            opacity: 0;
+          }
+          &:before{
+            transform: rotate(90deg);
+            margin-top: 0;
+
+          }
+        }
+      }
+    }
+    .logo{
+      img{
+        max-height: 50px;
+      }
+    }
+    .links-custom{
+      color: $primary;
+      display: block;
+      text-align: right;
+      li{
+        display: inline-block;
+        padding: 15px 20px;
+        a{
+          color: $primary;
+          text-decoration: none;
+          transition: all .5s ease;
+          font-weight: bold;
+          &:hover{
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}
+

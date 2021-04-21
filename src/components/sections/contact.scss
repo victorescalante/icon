@@ -7,9 +7,15 @@
     padding: 95px 0px 0px 26px;
     position: absolute;
     z-index: 2;
+    }
     img{
       opacity: .2;
       width: 600px;
+      @media (max-width: 970px) {
+        display: block;
+        margin: auto;
+        opacity: initial;
+        width: 200px;
     }
   }
   .title{
@@ -21,6 +27,16 @@
     font-weight: bold;
     line-height: 85px;
     z-index: 3;
+    margin: 0;
+    @media (max-width: 970px){
+      display: block;
+      font-size: 3rem;
+      height: initial;
+      line-height: 40px;
+      padding: 25px 0;
+      text-align: center;
+      width: 100%;
+    }
   }
   .right-text-custom{
     background: $secondary;
@@ -32,6 +48,9 @@
   .box-text{
     z-index: 1;
     padding: 204px 31px 0px 105px;
+    @media (max-width: 970px){
+      padding-top: 50px;
+    }
     h1{
       color: $primary;
       font-weight: bold;
@@ -49,11 +68,17 @@
       &::placeholder{
         color: white;
         opacity: 1;
+        @media(max-width: 970px){
+          color: $primary;
+        }
       }
+
     }
     .btn-aligne{
       text-align: right;
       padding: 25px 0px;
+
+
       .btn{
         font-size: 14px;
         color: white;
@@ -83,6 +108,9 @@
       h3{
         font-size: 12px;
         color: white;
+        @media (max-width: 970px){
+          color: $primary;
+        }
       }
     }
   }

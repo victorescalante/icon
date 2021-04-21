@@ -3,6 +3,16 @@
   height: 100vh;
   position: relative;
   width: 100%;
+  .img-code {
+    position: absolute;
+    padding: 42px 0 0 346px;
+    z-index: 2;
+
+    img {
+      width: 450px;
+      opacity: .2;
+    }
+  }
   .title{
     color: $seventh;
     align-items: center;
@@ -11,6 +21,16 @@
     font-size: 6rem;
     font-weight: bold;
     line-height: 85px;
+    margin: 0;
+    @media (max-width: 970px){
+      display: block;
+      font-size: 3rem;
+      height: initial;
+      line-height: 40px;
+      padding: 25px 0;
+      text-align: center;
+      width: 100%;
+    }
   }
   .right-text-custom{
     background: $eighth;
@@ -23,5 +43,12 @@
   .box-text{
     color: white;
     font-size: 15px;
+  }
+  @media (max-width: 970px){
+    img{
+      display: block;
+      margin: auto;
+      width: 200px;
+    }
   }
 }

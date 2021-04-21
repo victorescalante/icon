@@ -1,3 +1,22 @@
+.home-who-section{
+  background: $gray;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+
+
+  .footer-section{
+    position: absolute;
+    bottom: 30px;
+    right: 30%;
+    p{
+      margin-bottom: 0px;
+      color: $primary;
+    }
+  }
+}
+
+
 .who-section{
   background: $gray;
   height: 100vh;
@@ -21,31 +40,56 @@
     font-weight: bold;
     line-height: 85px;
     z-index: 3;
+    margin: 0;
+    @media (max-width: 970px) {
+      display: block;
+      font-size: 3rem;
+      height: initial;
+      line-height: 40px;
+      padding: 25px 0;
+      text-align: center;
+      width: 100%;
+    }
   }
   .right-text-custom{
     background: $fourth;
-    position: absolute;
-    width: 50%;
     height: 100vh;
+    position: absolute;
     right: 0;
+    width: 50%;
   }
   .box-text{
-    width: 100%;
-    // max-width: 670px;
     bottom: 0px;
     top: 50%;
+    // max-width: 670px;--
     position: absolute;
     padding: 25px 19%;
+    width: 100%;
     z-index: 1;
-    .first{
-      color: white;
-      font-size: 15px;
-      text-align: justify;
+
+  }
+  @media (max-width: 970px){
+    img{
+      display: block;
+      margin: auto;
+      width: 200px;
     }
-    .second{
-      color: white;
-      font-size: 15px;
-      text-align: justify;
+  }
+  .first {
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+    @media (max-width: 970px) {
+      color: $primary;
+      padding-top: 70px;
+    }
+  }
+  .second{
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+    @media (max-width: 970px){
+      color: $primary;
     }
   }
 }
