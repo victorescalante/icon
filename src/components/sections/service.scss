@@ -5,7 +5,7 @@
   width: 100%;
   .img-service{
     position: absolute;
-    padding: 111px 0px 0px 88px;
+    padding: 111px 0 0 88px;
     z-index: 2;
     img{
       width: 544px;
@@ -21,6 +21,16 @@
     font-weight: bold;
     line-height: 85px;
     z-index: 3;
+    margin: 0;
+    @media(max-width: 970px){
+      display: block;
+      font-size: 3rem;
+      height: initial;
+      line-height: 40px;
+      padding: 25px 0;
+      text-align: center;
+      width: 100%;
+    }
   }
   .right-text-custom{
     background: $sixth;
@@ -35,11 +45,21 @@
     font-size: 15px;
     z-index: 1;
   }
+  @media (max-width: 970px){
+    img{
+      display: block;
+      margin: auto;
+      width: 200px;
+    }
+  }
 }
 
 .list-services, .list-code{
   li{
     letter-spacing: normal;
     padding: 15px 0;
+    @media(max-width: 970px){
+      color: $primary;
+    }
   }
 }

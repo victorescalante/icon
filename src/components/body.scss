@@ -1,3 +1,19 @@
 .body{
   position: relative;
 }
+
+.custom-none-970{
+  display: block;
+}
+.custom-visibility-970{
+  display: none;
+}
+
+@media (max-width: 970px) {
+  .custom-none-970{
+    display: none;
+  }
+  .custom-visibility-970{
+    display: block;
+  }
+}
