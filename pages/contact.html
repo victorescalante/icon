@@ -9,6 +9,7 @@
     <link rel="icon" href="../assets/assets/favicon-01.png">
     <link rel="stylesheet" href="../dist/bootstrap.css">
     <link rel="stylesheet" href="../dist/app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <style>
         @font-face {
             font-family: "iconfont";
@@ -45,34 +46,37 @@
         <div class="icon-close"></div>
     </div>
     <ul class="links-custom-right">
-        <li><a href="#who-section" class="sliding-link">Quienes somos</a></li>
-        <li><a href="#service-section" class="sliding-link">Servicios</a></li>
-        <li><a href="#code-section" class="sliding-link">Valores</a></li>
-        <li><a href="#contact-section" class="sliding-link">Contacto</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="who.html" >Quienes somos</a></li>
+        <li><a href="service.html" >Servicios</a></li>
+        <li><a href="code.html" >Valores</a></li>
+        <li><a href="contact.html" >Contacto</a></li>
     </ul>
 </div>
 
 
 
-<div class="contact-section" >
-    <div class="div-menu">
-        <div class="container">
-            <div class="row space-nav">
-                <div class="col-sm-3">
-                    <div class="logo">
-                        <a href="../index.html"><img src="../assets/icono.png" alt=""></a>
+<div class="contact-section menu menu-absolute" >
+    <div class="div-menu blue">
+        <div class="space-nav links-gray">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-6 col-sm-3">
+                        <div class="logo">
+                            <a href="../index.html"><img src="../assets/icono.png" alt=""></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-9">
-                    <ul class="links-custom">
-                        <li><a href="#who-section" class="sliding-link">Quienes somos</a></li>
-                        <li><a href="#service-section" class="sliding-link">Servicios</a></li>
-                        <li><a href="#code-section" class="sliding-link">Valores</a></li>
-                        <li><a href="#contact-section" class="sliding-link">Contacto</a></li>
-                        <li><div class="nav-float">
-                            <div class="button-nav-float"></div>
-                        </div></li>
-                    </ul>
+                    <div class="col-6 col-sm-9">
+                        <ul class="links-custom">
+                            <li><a href="who.html">Quienes somos</a></li>
+                            <li><a href="service.html">Servicios</a></li>
+                            <li><a href="code.html">Valores</a></li>
+                            <li><a href="contact.html" class="active">Contacto</a></li>
+                            <li><div class="nav-float">
+                                <div class="button-nav-float"></div>
+                            </div></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,30 +90,32 @@
                 <p class="title">Contacto</p>
             </div>
             <div class="col-md-6">
-                <img src="../assets/assets/contacto.png" alt="">
-                <div class="box-text custom-visibility-970">
-                    <h1>Escríbenos e iniciemos una conversación:</h1>
-                    <div class="form form-custom">
-                        <label>
-                            <input type="text" name="name" placeholder="Nombre">
-                        </label>
-                        <label>
-                            <input type="text" name="email" placeholder="Email">
-                        </label>
-                        <label>
-                            <input type="text" name="message" placeholder="Mensaje">
-                        </label>
-                        <div class="btn-aligne">
-                            <button class="btn">Enviar</button>
+                <div class="custom-visibility-970">
+                    <img class="icon" src="../assets/assets/contacto-blanco.png" alt="">
+                    <div class="box-text">
+                        <h1>Escríbenos e iniciemos una conversación:</h1>
+                        <div class="form form-custom">
+                            <label>
+                                <input type="text" name="name" placeholder="Nombre">
+                            </label>
+                            <label>
+                                <input type="text" name="email" placeholder="Email">
+                            </label>
+                            <label>
+                                <input type="text" name="message" placeholder="Mensaje">
+                            </label>
+                            <div class="btn-aligne">
+                                <button class="btn">Enviar</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="information">
-                        <div class="img-whats">
-                            <img src="../assets/assets/whats-app.png" alt="">
-                        </div>
-                        <div class="letter">
-                            <h2><b>Envianos un WhatsApp: 55 3660 3511</b></h2>
-                            <h3>Calle Durango No.341. Piso 1.Col.Roma, Cuauhtémoc. C.P.06700. CDMX.</h3>
+                        <div class="information">
+                            <div class="img-whats">
+                                <img src="../assets/assets/whats-app.png" alt="">
+                            </div>
+                            <div class="letter">
+                                <h2><b>Envianos un WhatsApp: 55 3660 3511</b></h2>
+                                <h3>Calle Durango No.341. Piso 1.Col.Roma, Cuauhtémoc. C.P.06700. CDMX.</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,20 +123,22 @@
             <div class="right-text-custom custom-none-970" >
                 <div class="box-text">
                     <h1>Escríbenos e iniciemos una conversación:</h1>
-                    <div class="form form-custom">
-                        <label>
-                            <input type="text" name="name" placeholder="Nombre">
-                        </label>
-                        <label>
-                            <input type="text" name="email" placeholder="Email">
-                        </label>
-                        <label>
-                            <input type="text" name="message" placeholder="Mensaje">
-                        </label>
-                        <div class="btn-aligne">
-                            <button class="btn">Enviar</button>
+                    <form action="index.html">
+                        <div class="form form-custom">
+                            <label>
+                                <input type="text" name="name" id="name" placeholder="Nombre" required>
+                            </label>
+                            <label>
+                                <input type="text" name="email" id="email" placeholder="Email" required>
+                            </label>
+                            <label>
+                                <input type="text" name="message" id="message" placeholder="Mensaje" required>
+                            </label>
+                            <div class="btn-aligne">
+                                <button class="btn send-email">Enviar</button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                     <div class="information">
                         <div class="img-whats">
                             <img src="../assets/assets/whats-app.png" alt="">
@@ -147,12 +155,17 @@
 </div>
 
 
-
+<a href="https://api.whatsapp.com/send?phone=+525536603511text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre"
+   class="btn-float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+</a>
 
 <script
         src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script>
     $(".nav-float").click(function () {
         $( ".space-nav" ).addClass( "open-right" );
@@ -164,16 +177,51 @@
         $( ".right-menu" ).removeClass( "open" );
     });
 
+    function validateEmail(email) {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
 
-    $(window).scroll(function () {
-        let $this = $(this),
-            $head = $('.div-menu');
-        if ($this.scrollTop() > 500) {
-            $head.addClass('fixed_header');
-        } else {
-            $head.removeClass('fixed_header');
+    emailjs.init("user_HxzSLaJkaENMkEUZKd3DZ");
+
+    $(".send-email").click(function () {
+
+        if (!validateEmail($('#email').val())){
+            return Swal.fire(
+                'Valida tu correo',
+                'Valida tu correo para poder ponernos en contacto',
+                'error'
+            )
         }
+
+        if ($('#name').val().length >= 1 && $('#message').val().length >= 1 && $('#email').val().length > 1){
+            emailjs.send("service_htqnrre", "template_snx9f59", {
+                name: $('#name').val(),
+                message: $('#message').val(),
+                email: $('#email').val()
+            }, "user_HxzSLaJkaENMkEUZKd3DZ");
+
+            $('#name').val("")
+            $('#message').val("")
+            $('#email').val("")
+
+            return Swal.fire(
+                'Mensaje enviado',
+                'Tu mensaje fue enviado, en breve te escribiremos',
+                'success'
+            )
+        }else{
+            return Swal.fire(
+                'Valida tus datos',
+                'Llena el formulario',
+                'error'
+            )
+        }
+
+
+
     });
+
 </script>
 </body>
 </html>

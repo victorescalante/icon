@@ -8,6 +8,8 @@
     <link rel="icon" href="assets/assets/favicon-01.png">
     <link rel="stylesheet" href="dist/bootstrap.css">
     <link rel="stylesheet" href="dist/app.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <style>
         @font-face {
             font-family: "iconfont";
@@ -44,44 +46,86 @@
             <div class="icon-close"></div>
         </div>
         <ul class="links-custom-right">
-            <li><a href="#who-section" class="sliding-link">Quienes somos</a></li>
-            <li><a href="#service-section" class="sliding-link">Servicios</a></li>
-            <li><a href="#code-section" class="sliding-link">Valores</a></li>
-            <li><a href="#contact-section" class="sliding-link">Contacto</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="pages/who.html" >Quienes somos</a></li>
+            <li><a href="pages/service.html" >Servicios</a></li>
+            <li><a href="pages/code.html" >Valores</a></li>
+            <li><a href="pages/contact.html" >Contacto</a></li>
         </ul>
     </div>
 
-    <div class="home-section">
+    <div class="home-section menu menu-absolute">
         <div class="div-menu">
-            <div class="container">
-                <div class="row space-nav">
-                    <div class="col-sm-3">
-                        <div class="logo">
-                            <img src="assets/icono.png" alt="">
+            <div class="space-nav">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-6 col-sm-3">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/icono.png" alt=""></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-9">
-                        <ul class="links-custom">
-                            <li><a href="pages/who.html" class="sliding-link">Quienes somos</a></li>
-                            <li><a href="pages/service.html" class="sliding-link">Servicios</a></li>
-                            <li><a href="pages/code.html" class="sliding-link">Valores</a></li>
-                            <li><a href="pages/contact.html" class="sliding-link">Contacto</a></li>
-                            <li><div class="nav-float">
-                                <div class="button-nav-float"></div>
-                            </div></li>
-                        </ul>
+                        <div class="col-6 col-sm-9">
+                            <ul class="links-custom">
+                                <li><a href="pages/who.html">Quienes somos</a></li>
+                                <li><a href="pages/service.html">Servicios</a></li>
+                                <li><a href="pages/code.html" class="active">Valores</a></li>
+                                <li><a href="pages/contact.html" >Contacto</a></li>
+                                <li><div class="nav-float">
+                                    <div class="button-nav-float"></div>
+                                </div></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container title-custom">
-          <div class="row">
-            <div class="offset-sm-1 col-sm-5">
-                <div class="title">
-                  <img class="icon"src="assets/assets/logo-01.png" alt="">
-                    <p class="subtitle">Ver,Planear,Resolver</p>
-                    <div class="honest">
+        <div class="container title-custom h-100 important-hg">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="slick">
+                    <!-- <div>
+                        <div class="row slider-1">
+                            <div class="col-6">
+                                <div class="title">
+                                    <img class="icon" src="assets/assets/logo-01.png" alt="">
+                                    <p class="subtitle">Ver,Planear,Resolver</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="honest">honestidad <br> y cero bluff</div>
+                            </div>
+                        </div>
 
+                    </div> -->
+                    <div>
+                        <div class="slider-imgs">
+                            <img src="assets/assets/slider-1.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-imgs">
+                            <img src="assets/assets/slider-2.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-imgs">
+                            <img src="assets/assets/slider-3.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-imgs">
+                            <img src="assets/assets/slider-4.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-imgs">
+                            <img src="assets/assets/slider-5.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-imgs">
+                            <img src="assets/assets/slider-6.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -90,14 +134,24 @@
         <div class="footer-section">
             <p>iconostrategy@gmail.com</p>
         </div>
+        <div class="footer-dots">
+            <div class="prev"> < </div>
+            <div class="next"> > </div>
+        </div>
 
     </div>
 
-    <script
-            src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            crossorigin="anonymous"></script>
+    <a href="https://api.whatsapp.com/send?phone=+525536603511text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre"
+       class="btn-float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script>
+
         $(".nav-float").click(function () {
             $( ".space-nav" ).addClass( "open-right" );
             $( ".right-menu" ).addClass( "open" );
@@ -108,17 +162,22 @@
             $( ".right-menu" ).removeClass( "open" );
         });
 
+        $(document).on('ready', function (){
+            $('.slick').slick({
+                dots: false,
+                arrows: false,
+                fade: true,
+                autoplay: true
+            });
+            $('.prev').click(function () {
+                $('.slick').slick('slickPrev');
+            })
+            $('.next').click(function () {
+                $('.slick').slick('slickNext');
+            })
 
-
-        $(window).scroll(function () {
-            let $this = $(this),
-                $head = $('.div-menu');
-            if ($this.scrollTop() > 500) {
-                $head.addClass('fixed_header');
-            } else {
-                $head.removeClass('fixed_header');
-            }
         });
+
     </script>
 </body>
 </html>

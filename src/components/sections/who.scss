@@ -3,14 +3,18 @@
   height: 100vh;
   position: absolute;
   width: 100%;
-
+  @media (max-width: 970px){
+    background: #C8932D;
+    height: 100%;
+    padding-bottom: 100px;
+  }
 
   .footer-section{
     position: absolute;
     bottom: 30px;
     right: 30%;
     p{
-      margin-bottom: 0px;
+      margin-bottom: 0;
       color: $primary;
     }
   }
@@ -22,6 +26,11 @@
   height: 100vh;
   position: relative;
   width: 100%;
+  @media (max-width: 970px){
+    background: #C8932D;
+    height: 100%;
+    padding-bottom: 100px;
+  }
   .img-who{
     position: absolute;
     padding: 42px 0px 0px 483px;
@@ -43,12 +52,13 @@
     margin: 0;
     @media (max-width: 970px) {
       display: block;
-      font-size: 3rem;
+      font-size: 2rem;
       height: initial;
       line-height: 40px;
       padding: 25px 0;
       text-align: center;
       width: 100%;
+      color: white;
     }
   }
   .right-text-custom{
@@ -59,20 +69,22 @@
     width: 50%;
   }
   .box-text{
-    bottom: 0px;
-    top: 50%;
-    // max-width: 670px;--
-    position: absolute;
-    padding: 25px 19%;
-    width: 100%;
     z-index: 1;
-
+    padding: 50% 31px 0px 105px;
+    max-width: 550px;
+    @media (max-width: 970px){
+      padding: 50px;
+      .first{
+        padding-top: 0;
+      }
+    }
   }
   @media (max-width: 970px){
-    img{
+    .title-custom img{
       display: block;
       margin: auto;
       width: 200px;
+      opacity: .5;
     }
   }
   .first {
@@ -80,7 +92,7 @@
     font-size: 15px;
     text-align: justify;
     @media (max-width: 970px) {
-      color: $primary;
+      color: white;
       padding-top: 70px;
     }
   }
@@ -89,7 +101,7 @@
     font-size: 15px;
     text-align: justify;
     @media (max-width: 970px){
-      color: $primary;
+      color: white;
     }
   }
 }

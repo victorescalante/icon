@@ -3,6 +3,11 @@
   height: 100vh;
   position: relative;
   width: 100%;
+  @media (max-width: 970px) {
+    height: 100%;
+    background: #C84E41;
+    padding-bottom: 100px;
+  }
   .img-service{
     position: absolute;
     padding: 111px 0 0 88px;
@@ -24,12 +29,13 @@
     margin: 0;
     @media(max-width: 970px){
       display: block;
-      font-size: 3rem;
+      font-size: 2rem;
       height: initial;
       line-height: 40px;
       padding: 25px 0;
       text-align: center;
       width: 100%;
+      color: white;
     }
   }
   .right-text-custom{
@@ -43,13 +49,20 @@
   .box-text{
     color: white;
     font-size: 15px;
-    z-index: 1;
+    max-width: 450px;
+    height: 100%;
+    overflow: scroll;
+    @media (max-width: 970px){
+      padding-top: 50px;
+      max-width: 100%;
+    }
   }
   @media (max-width: 970px){
-    img{
+    .title-custom img{
       display: block;
       margin: auto;
       width: 200px;
+      opacity: .5;
     }
   }
 }
@@ -59,7 +72,7 @@
     letter-spacing: normal;
     padding: 15px 0;
     @media(max-width: 970px){
-      color: $primary;
+      color: white;
     }
   }
 }
