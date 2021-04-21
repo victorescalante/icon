@@ -132,12 +132,6 @@
         $( ".right-menu" ).removeClass( "open" );
     });
 
-    $(".sliding-link").click(function(e) {
-        e.preventDefault();
-        var aid = $(this).attr("href");
-        $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
-    });
-
     $(window).scroll(function () {
         let $this = $(this),
             $head = $('.div-menu');
