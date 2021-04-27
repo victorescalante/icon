@@ -16,10 +16,10 @@ a:hover, a:active, a:focus {
 
 @media (max-width: 970px) {
   .custom-none-970{
-    display: none;
+    display: none !important;
   }
   .custom-visibility-970{
-    display: block;
+    display: block !important;
   }
 }
 

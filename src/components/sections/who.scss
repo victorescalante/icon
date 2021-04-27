@@ -2,7 +2,7 @@
   background: $gray;
   height: 100vh;
   position: absolute;
-  width: 100%;
+  width: 100vh;
   @media (max-width: 970px){
     background: #C8932D;
     height: 100%;
@@ -13,9 +13,14 @@
     position: absolute;
     bottom: 30px;
     right: 30%;
+    z-index: 2;
     p{
       margin-bottom: 0;
       color: $primary;
+    }
+    @media (max-width: 970px){
+      left: 30%;
+      right: initial;
     }
   }
 }
@@ -28,7 +33,7 @@
   width: 100%;
   @media (max-width: 970px){
     background: #C8932D;
-    height: 100%;
+    height: 100vh;
     padding-bottom: 100px;
   }
   .img-who{
@@ -89,19 +94,21 @@
   }
   .first {
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     text-align: justify;
     @media (max-width: 970px) {
       color: white;
       padding-top: 70px;
+      font-size: 15px;
     }
   }
   .second{
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     text-align: justify;
     @media (max-width: 970px){
       color: white;
+      font-size: 15px;
     }
   }
 }

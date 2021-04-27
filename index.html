@@ -46,7 +46,7 @@
             <div class="icon-close"></div>
         </div>
         <ul class="links-custom-right">
-            <li><a href="../index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="pages/who.html" >Quienes somos</a></li>
             <li><a href="pages/service.html" >Servicios</a></li>
             <li><a href="pages/code.html" >Valores</a></li>
@@ -83,48 +83,64 @@
           <div class="row h-100 align-items-center">
             <div class="col-12">
                 <div class="slick">
-                    <!-- <div>
-                        <div class="row slider-1">
-                            <div class="col-6">
-                                <div class="title">
-                                    <img class="icon" src="assets/assets/logo-01.png" alt="">
-                                    <p class="subtitle">Ver,Planear,Resolver</p>
-                                </div>
+                    <div>
+                        <div class="slider-imgs">
+                            <div class="custom-none-970">
+                                <img src="assets/assets/slider-1-new.png" alt="">
                             </div>
-                            <div class="col-6">
-                                <div class="honest">honestidad <br> y cero bluff</div>
+                            <div class="custom-visibility-970">
+                                <img src="assets/assets/slider-movil-1.png" alt="">
                             </div>
                         </div>
-
-                    </div> -->
+                    </div>
                     <div>
                         <div class="slider-imgs">
-                            <img src="assets/assets/slider-1.png" alt="">
+                            <div class="custom-none-970">
+                                <img src="assets/assets/slider-2-new.png" alt="">
+                            </div>
+                            <div class="custom-visibility-970">
+                                <img src="assets/assets/slider-movil-2.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <div>
                         <div class="slider-imgs">
-                            <img src="assets/assets/slider-2.png" alt="">
+                            <div class="custom-none-970">
+                                <img src="assets/assets/slider-3-new.png" alt="">
+                            </div>
+                            <div class="custom-visibility-970">
+                                <img src="assets/assets/slider-movil-3.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <div>
                         <div class="slider-imgs">
-                            <img src="assets/assets/slider-3.png" alt="">
+                            <div class="custom-none-970">
+                                <img src="assets/assets/slider-4-new.png" alt="">
+                            </div>
+                            <div class="custom-visibility-970">
+                                <img src="assets/assets/slider-movil-4.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <div>
                         <div class="slider-imgs">
-                            <img src="assets/assets/slider-4.png" alt="">
+                            <div class="custom-none-970">
+                                <img src="assets/assets/slider-5-new.png" alt="">
+                            </div>
+                            <div class="custom-visibility-970">
+                                <img src="assets/assets/slider-movil-5.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <div>
                         <div class="slider-imgs">
-                            <img src="assets/assets/slider-5.png" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="slider-imgs">
-                            <img src="assets/assets/slider-6.png" alt="">
+                            <div class="custom-none-970">
+                                <img src="assets/assets/slider-6-new.png" alt="">
+                            </div>
+                            <div class="custom-visibility-970">
+                                <img src="assets/assets/slider-movil-6.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -155,11 +171,13 @@
         $(".nav-float").click(function () {
             $( ".space-nav" ).addClass( "open-right" );
             $( ".right-menu" ).addClass( "open" );
+            $( ".footer-section" ).addClass( "open" );
         });
 
         $(".close-button-menu").click(function () {
             $( ".space-nav" ).removeClass( "open-right" );
             $( ".right-menu" ).removeClass( "open" );
+            $( ".footer-section" ).removeClass( "open" );
         });
 
         $(document).on('ready', function (){
@@ -167,7 +185,8 @@
                 dots: false,
                 arrows: false,
                 fade: true,
-                autoplay: true
+                autoplay: true,
+                verticalSwiping: true
             });
             $('.prev').click(function () {
                 $('.slick').slick('slickPrev');
