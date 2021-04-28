@@ -1,6 +1,6 @@
 .code-section{
   background: $gray;
-  height: 100vh;
+  height: 100%;
   position: relative;
   width: 100%;
   @media (max-width: 970px){
@@ -42,7 +42,7 @@
     background: $eighth;
     position: absolute;
     width: 50%;
-    height: 100vh;
+    height: inherit;
     right: 0;
     padding: 145px;
   }

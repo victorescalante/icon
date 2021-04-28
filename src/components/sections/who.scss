@@ -1,31 +1,3 @@
-.home-who-section{
-  background: $gray;
-  height: 100vh;
-  position: absolute;
-  width: 100vh;
-  @media (max-width: 970px){
-    background: #C8932D;
-    height: 100%;
-    padding-bottom: 100px;
-  }
-
-  .footer-section{
-    position: absolute;
-    bottom: 30px;
-    right: 30%;
-    z-index: 2;
-    p{
-      margin-bottom: 0;
-      color: $primary;
-    }
-    @media (max-width: 970px){
-      left: 30%;
-      right: initial;
-    }
-  }
-}
-
-
 .who-section{
   background: $gray;
   height: 100vh;
@@ -33,7 +5,7 @@
   width: 100%;
   @media (max-width: 970px){
     background: #C8932D;
-    height: 100vh;
+    height: 100%;
     padding-bottom: 100px;
   }
   .img-who{

@@ -37,6 +37,9 @@
   height: 100vh;
   position: relative;
   width: 100%;
+  @media (max-width: 970px) {
+    height: 100%;
+  }
   &.menu-absolute{
     .space-nav{
       z-index: 10;
@@ -139,17 +142,30 @@
     position: absolute;
     bottom: 30px;
     right: 30%;
+    &.relative{
+      position: relative;
+      bottom: initial;
+      right: initial;
+      @media (max-width: 970px) {
+        left: initial;
+        text-align: center;
+      }
+      &.open{
+        bottom: 30px;
+        right: 30%;
+      }
+    }
     &.open{
       z-index: 101;
       position: fixed;
       transition: all 1s ease-in;
-      p{
+      a{
         color: white;
       }
     }
-    p{
+    a{
       margin-bottom: 0px;
-      color: $primary;
+      color: #cccfdb;
       font-weight: bold;
     }
     @media (max-width: 970px) {
@@ -164,6 +180,7 @@
     right: 10%;
     transform: rotate(90deg);
     @media (max-width: 970px) {
+      display: none;
       bottom: 80px;
       right: initial;
       left: 15px;
