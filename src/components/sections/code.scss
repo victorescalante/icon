@@ -42,9 +42,12 @@
     background: $eighth;
     position: absolute;
     width: 50%;
-    height: inherit;
+    height: 100vh;
     right: 0;
     padding: 145px;
+    @media (max-width: 1400px){
+      height: inherit;
+    }
   }
   .box-text{
     color: white;
