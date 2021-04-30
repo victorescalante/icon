@@ -109,7 +109,7 @@
       img{
         width: 100%;
         @media (max-width: 970px) {
-          max-width: 100px;
+          max-width: 140px;
         }
       }
     }
@@ -130,6 +130,9 @@
           text-decoration: none;
           transition: all .5s ease;
           font-weight: bold;
+          @media (min-width: 1200px){
+            font-size: 18px;
+          }
           &:hover{
             color: $secondary;
           }

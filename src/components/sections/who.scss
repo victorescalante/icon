@@ -44,6 +44,9 @@
     position: absolute;
     right: 0;
     width: 50%;
+    @media (max-width: 1200px) and (max-height: 550px){
+      height: inherit;
+    }
   }
   .box-text{
     z-index: 1;
