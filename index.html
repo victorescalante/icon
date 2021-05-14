@@ -36,10 +36,16 @@
         p.title{
             font-family: "iconfont-bold", sans-serif;
         }
+        body{
+          background: #f5f5f5;
+        }
+        .bg-blue{
+          background: #22315c;
+        }
     </style>
     <title>Icono Strategy</title>
 </head>
-<body class="body" style="background: #f5f5f5">
+<body class="body">
 
     <div class="right-menu">
         <div class="close-btn close-button-menu">
@@ -96,10 +102,10 @@
                     <div>
                         <div class="slider-imgs">
                             <div class="custom-none-970">
-                                <img src="assets/assets/slider-2-new.png" alt="">
+                                <img src="assets/assets/slider-2-dark.png" alt="">
                             </div>
                             <div class="custom-visibility-970">
-                                <img src="assets/assets/slider-movil-2.png" alt="">
+                                <img src="assets/assets/slider-movil-2-black.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -116,10 +122,10 @@
                     <div>
                         <div class="slider-imgs">
                             <div class="custom-none-970">
-                                <img src="assets/assets/slider-4-new.png" alt="">
+                                <img src="assets/assets/slider-4-dark.png" alt="">
                             </div>
                             <div class="custom-visibility-970">
-                                <img src="assets/assets/slider-movil-4.png" alt="">
+                                <img src="assets/assets/slider-movil-4-black.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -136,10 +142,10 @@
                     <div>
                         <div class="slider-imgs">
                             <div class="custom-none-970">
-                                <img src="assets/assets/slider-6-new.png" alt="">
+                                <img src="assets/assets/slider-6-dark.png" alt="">
                             </div>
                             <div class="custom-visibility-970">
-                                <img src="assets/assets/slider-movil-6.png" alt="">
+                                <img src="assets/assets/slider-movil-6-dark.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -187,6 +193,16 @@
                 fade: true,
                 autoplay: true,
                 verticalSwiping: true
+            });
+            $('.slick').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+              console.log(nextSlide);
+              if (nextSlide == 1 || nextSlide == 3 || nextSlide == 5) {
+                $(".home-section").addClass("background_blue");
+                $(".body").addClass("bg-blue");
+              }else{
+                $(".home-section").removeClass("background_blue");
+                $(".body").removeClass("bg-blue");
+              }
             });
             $('.prev').click(function () {
                 $('.slick').slick('slickPrev');

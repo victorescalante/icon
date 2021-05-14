@@ -34,6 +34,18 @@
 }
 .home-section, .menu{
   background: $gray;
+  &.background_blue{
+    background: #22315c;
+    .space-nav .links-custom li a {
+      color: white;
+    }
+    .nav-float .button-nav-float{
+      background: white;
+      &::before, &::after{
+        background: white;
+      }
+    }
+  }
   height: 100vh;
   position: relative;
   width: 100%;
