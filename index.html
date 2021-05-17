@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="assets/assets/favicon-01.png">
     <link rel="stylesheet" href="dist/bootstrap.css">
-    <link rel="stylesheet" href="dist/app.css">
+    <link rel="stylesheet" href="dist/app.1.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <style>
@@ -41,6 +41,10 @@
         }
         .bg-blue{
           background: #22315c;
+          position: initial;
+        }
+        .hidden-cx{
+          display: none;
         }
     </style>
     <title>Icono Strategy</title>
@@ -67,7 +71,12 @@
                     <div class="row">
                         <div class=" col-6 col-md-3">
                             <div class="logo">
+                              <div class="logo-normal">
                                 <a href="index.html"><img src="assets/icono.png" alt=""></a>
+                              </div>
+                              <div class="logo-white hidden-cx">
+                                  <a href="index.html"><img src="assets/logo-blanco.png" alt=""></a>
+                              </div>
                             </div>
                         </div>
                         <div class="col-6 col-md-9">
@@ -199,9 +208,15 @@
               if (nextSlide == 1 || nextSlide == 3 || nextSlide == 5) {
                 $(".home-section").addClass("background_blue");
                 $(".body").addClass("bg-blue");
+                $(".space-nav").addClass("bg-blue");
+                $(".logo-white").removeClass('hidden-cx');
+                $(".logo-normal").addClass('hidden-cx');
               }else{
                 $(".home-section").removeClass("background_blue");
                 $(".body").removeClass("bg-blue");
+                $(".space-nav").removeClass("bg-blue");
+                $(".logo-white").addClass('hidden-cx');
+                $(".logo-normal").removeClass('hidden-cx');
               }
             });
             $('.prev').click(function () {
