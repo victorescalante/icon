@@ -66,7 +66,7 @@
 
     <div class="home-section menu menu-absolute">
         <div class="div-menu">
-            <div class="space-nav">
+            <div class="space-nav space-nav-home" style="position: relative">
                 <div class="container">
                     <div class="row">
                         <div class=" col-6 col-md-3">
@@ -75,7 +75,7 @@
                                 <a href="index.html"><img src="assets/icono.png" alt=""></a>
                               </div>
                               <div class="logo-white hidden-cx">
-                                  <a href="index.html"><img src="assets/logo-blanco.png" alt=""></a>
+                                  <a href="index.html"><img src="assets/logo-c.png" alt=""></a>
                               </div>
                             </div>
                         </div>
@@ -94,8 +94,8 @@
                 </div>
             </div>
         </div>
-        <div class="container title-custom h-100 important-hg">
-          <div class="row h-100 align-items-center">
+        <div class="container title-custom important-hg">
+          <div class="row align-items-center">
             <div class="col-12">
                 <div class="slick">
                     <div>
@@ -201,7 +201,8 @@
                 arrows: false,
                 fade: true,
                 autoplay: true,
-                verticalSwiping: true
+                verticalSwiping: true,
+                adaptiveHeight: true
             });
             $('.slick').on('beforeChange', function(event, slick, currentSlide, nextSlide){
               console.log(nextSlide);

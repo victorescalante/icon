@@ -68,9 +68,11 @@
     }
   }
   .space-nav{
-    padding: 60px 0;
+    padding: 60px 0 60px 0;
     position: relative;
-    // transition: all 1s ease;
+    &.space-nav-home{
+      padding: 60px 0 0 0;
+    }
     &.links-gray{
       .links-custom{
         a{
