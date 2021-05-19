@@ -201,8 +201,10 @@
                 arrows: false,
                 fade: true,
                 autoplay: true,
+                autoplaySpeed: 3500,
                 verticalSwiping: true,
-                adaptiveHeight: true
+                adaptiveHeight: true,
+                pauseOnHover: false
             });
             $('.slick').on('beforeChange', function(event, slick, currentSlide, nextSlide){
               console.log(nextSlide);
