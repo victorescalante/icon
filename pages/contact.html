@@ -188,7 +188,7 @@
         return re.test(String(email).toLowerCase());
     }
 
-    emailjs.init("user_HxzSLaJkaENMkEUZKd3DZ");
+    emailjs.init("user_W6VPn2sjkvJA4LZKBWkVI");
 
     $(".send-email").click(function () {
 
@@ -201,11 +201,11 @@
         }
 
         if ($('#name').val().length >= 1 && $('#message').val().length >= 1 && $('#email').val().length > 1){
-            emailjs.send("service_htqnrre", "template_snx9f59", {
+            emailjs.send("service_i3g1hj9", "template_uaql87s", {
                 name: $('#name').val(),
                 message: $('#message').val(),
                 email: $('#email').val()
-            }, "user_HxzSLaJkaENMkEUZKd3DZ");
+            }, "user_W6VPn2sjkvJA4LZKBWkVI");
 
             $('#name').val("")
             $('#message').val("")
